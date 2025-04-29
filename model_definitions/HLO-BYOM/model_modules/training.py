@@ -1,7 +1,7 @@
 from teradataml import *
 from aoa import (
     record_training_stats,
-    save_plot,
+    get_feature_stats_summary,,
     aoa_create_context,
     ModelContext
 )
