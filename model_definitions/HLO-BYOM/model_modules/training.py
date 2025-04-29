@@ -23,10 +23,10 @@ def train(context: ModelContext, **kwargs):
     print("Loading Model into Vantage...")
 
     save_byom(model_id=f"{context.model_id}", 
-             model_file=f"{context.artifact_output_path}/model.onnx", 
+             model_file="model.onnx",
              table_name="BYOM_Models",
-             additional_columns={"model_version": f"{context.model_version}", 
-                                 "model_type": "ONNX", 
+             additional_columns={"model_version": f"{context.model_version}",
+                                 "model_type": "ONNX",
                                  "project_id": f"{context.project_id}",
                                  "deployed_at": datetime.datetime.now()})
 
