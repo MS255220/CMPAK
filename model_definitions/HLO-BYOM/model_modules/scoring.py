@@ -5,6 +5,8 @@ from aoa import (
     ModelContext
 )
 
+import os
+
 def score(context: ModelContext, **kwargs):
     aoa_create_context()
 
